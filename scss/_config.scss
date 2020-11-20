@@ -1,78 +1,120 @@
-// color palette
-$primary: lighten(#f42, 10%);
-$secondary: lighten($primary, 30%);
-$text-light: white;
-$text-shade: lighten(rgb(97, 94, 94), 30%);
-$text-dark: #272727;
-$text-grey: gray;
-$nav-hover: white;
-$footer-dark: black;
-$footer-light: #272727;
-$form-grey: #d8d8d8;
+/* Palette */
 
-// other colors for use
+/* palette 1 pinky: #ac8181  grey: #cfceca white: #f8f8ff blue-dark: #253d5b */
+/* palette 2 white: #FFFFFF   beige: #F4F1E0  red: #F14C38  blue_dark: #144955 */
 
-$classic-blue: #0f4c81;
+//color bg
+$color_nav_bg: rgba(253, 253, 253, 2);
+$color_footer_bg: #F2F2F2;
+
+//color logo and nav
+
+$color_logo_main: #2EB641;
+$color_logo_second: #0A164E;
+$color_navigation: #0A164E;
+$color_footer_txt: #272727;
+
+//color titles
+$color_big_title: #1b2d38;
+$color_second_title: #2EB641;
+
+//color ordinary text
+$color_txt_dark: #272727;
+$color_txt_light: #0f4c81;
+
+// colors
+$my_dark:  #0A164E;
+$my_green: #37A000;
+$my_green_dark: #008329;
+$my_light_green: #bcf5bc;
 $tangerine: #da4221;
-$my-black: #272727;
-$my-orange: #ff652f;
-$my-light-blue: #2ab2c0;
-$my-light-orange: #f8a036;
+$tangerine_dark: #D50000;
+$my_yellow: #E6A01E;
+$my_yellow_dark: hsl(39, 92%, 35%);
+$light-blue: #2ab2c0;
+$classic-blue: #0f4c81;
+$my_white: white;
+$my_grey: grey;
+/* Typography */
 
-//typography
+// navigation typography
+$font_nav: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font_logo_main: 'Abril Fatface', cursive, 'Open Sans', sans-serif;
+$font_logo_second: 'Abril Fatface', cursive, 'Open Sans', sans-serif;
 
-// font-family: 'Nanum Gothic', sans-serif;
-// font-family: 'Sacramento', cursive;
-// font-family: 'Parisienne', cursive;
-// font-family: 'Rock Salt', cursive;
-// font-family: 'Indie Flower', cursive;
-// font-family: 'Just Another Hand', cursive;
-// font-family: 'Crafty Girls', cursive;
-// font-family: 'Mansalva', cursive;
-// font-family: 'Sedgwick Ave Display', cursive;
-// font-family: 'Lakki Reddy', cursive;
-// font-family: 'Montserrat', sans-serif;
+// Interface typography
 
-$capital: "Ramabhadra",sans-serif;
-$capital-accent:  "Ramabhadra",sans-serif;
-$navigation-font:  "Ramabhadra",sans-serif;
-$text-regular: "Ramabhadra",sans-serif;
-$logo1: "Rock Salt",cursive;
-$logo2: "Sedgwick Ave Display",cursive;
+$font_interf_bold: 'Abril Fatface', cursive, 'Open Sans', sans-serif;
+$font_interf_small: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-// animation
+// article typography
+$font_big_title: 'Abril Fatface', cursive, 'Open Sans', sans-serif;
+$font_ordinary_text: 'Courier New', Courier, monospace;
+$font_second_title:  'Raleway', sans-serif;
 
-@mixin ease-out {
-  transition: all 0.5s ease-out;
+// box models
+
+:root {
+  --nav_height_desk: 76px;
+  --nav_height_tablet: 127px;
+  --nav_height_mobile: 72px;
+  --footer_height_desk: 127px;
+  --footer_height_desk: 127px;
+  --footer_height_tablet: 127px;
 }
 
-@mixin ease-in {
-  transition: all 0.5s ease-in;
-}
+$nav_height_desk: 76px;
+$nav_height_tablet: 127px;
+$nav_height_mobile: 72px;
 
-// content self aligning
-@mixin self-center {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-}
+$footer_height_desk: 127px;
+$footer_height_tablet: 127px;
+$footer_height_mobile: 190px;
 
-//media queries
+/* animation mixin */
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
 
-@mixin mobile {
-  @media screen and (max-width: 768px) {
-    @content;
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
-@mixin tablette {
-  @media screen and (min-width: 769px) and (max-width: 1023px) {
-    @content;
-  }
+/* global settings */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-@mixin desktop {
-  @media screen and (min-width: 1024px) {
-    @content;
-  }
+html {
+  min-width: 22rem;
+  min-height: 44rem;
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  // background-color: white;
+  width: 100%;
+  min-height: 100vh ;
+  min-width: 22rem;
+  display: block;
 }
