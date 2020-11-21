@@ -145,6 +145,79 @@
   color: #da4221;
 }
 
+#stack {
+  min-height: calc(100vh - var(--nav_height_desk));
+  overflow-x: hidden;
+  background-color: #15202b;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stack_header {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stack_header h1 {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 3rem;
+  color: #1da1f2;
+  padding: 1rem;
+}
+
+.separation {
+  margin-top: 1rem;
+  width: 7%;
+  border-bottom: 6px solid #2ab2c0;
+  border-radius: 5px;
+}
+
+.stack_list {
+  list-style: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 70%;
+  margin: auto;
+  padding: 2.8125rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto;
+  grid-gap: 2vmin;
+  grid-auto-flow: dense;
+}
+
+.stack_item {
+  text-align: center;
+  height: 8rem;
+}
+
+.stack_item svg {
+  width: 6rem;
+  margin: auto;
+}
+
 *,
 *::after,
 *::before {
@@ -188,9 +261,6 @@ a {
           align-items: center;
   background-color: white;
   position: fixed;
-  position: -webkit-sticky;
-  /* Safari */
-  position: sticky !important;
   top: -1px;
   z-index: 4000;
   -webkit-box-shadow: 0 2px 6px 0 rgba(10, 22, 78, 0.15);
@@ -269,7 +339,7 @@ a {
   letter-spacing: 0.938px;
   line-height: 23px;
   font-weight: 600;
-  color: #1e2539;
+  color: #15202b;
   text-transform: uppercase;
   position: relative;
 }
@@ -286,7 +356,7 @@ a {
   content: "";
   display: block;
   height: 2px;
-  background-color: #1e2539;
+  background-color: #15202b;
   position: absolute;
   bottom: -0.6rem;
   left: 0;
@@ -302,7 +372,7 @@ a {
 }
 
 .nav-list__link:hover {
-  color: #1e2539;
+  color: #15202b;
   -webkit-animation: fading 1s ease-out 0s;
           animation: fading 1s ease-out 0s;
 }
