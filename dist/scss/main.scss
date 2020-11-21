@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Syncopate:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&family=Raleway&display=swap');
 @import "settings";
+@import "home";
 
 *,
 *::after,
@@ -14,20 +15,123 @@
 
 html {
   min-width: 22rem;
-  min-height: 44rem;
+  min-height: 70rem;
   display: block;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 body {
-  // background-color: white;
   width: 100%;
-  min-height: 100vh ;
-  min-width: 22rem;
+  height: 100%;
   display: block;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+// navigation
+
+.myheader {
+  width: 100%;
+  height: var(--nav_height_desk);
+  margin: 0;
+  padding: 0.3rem 0.1rem 0.8rem 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  position: -webkit-sticky; /* Safari */
+  position: sticky !important;
+  top: -1px;
+  z-index: 4000;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(10,22,78,0.15);
+     -moz-box-shadow: 0 2px 6px 0 rgba(10,22,78,0.15);
+          box-shadow: 0 2px 6px 0 rgba(10,22,78,0.15);
+  @include tablette {
+    height: var(--nav_height_tablet);
+    flex-direction: column;
+  }
+  @include mobile {
+    height: var(--nav_height_mobile);
+    flex-direction: column;
+  }
+}
+
+.my-brand-nav {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 2.5rem;
+  overflow: hidden;
+}
+
+.logo {
+  font-size: inherit;
+  overflow: hidden;
+  text-decoration: none !important;
+  color: $classic-blue;
+  font-family: $font_logo;
+
+  &:hover {
+    color: $my-light-blue;
+  }
+
+  span {
+    font-weight: 1000;
+    color: $tangerine;
+  }
+}
+
+.my-nav-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-list__item {
+  padding: 0.8rem 0.9rem;
+  @include mobile {
+    padding: 0.4rem;
+  }
+}
+
+.nav-list__link {
+  font-size: 0.9rem;
+  font-family: $font_big;
+  letter-spacing: 0.938px;
+  line-height: 23px;
+  font-weight: 600;
+  color: $dark-blue;
+  text-transform: uppercase;
+  position: relative;
+
+  @include mobile {
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+    line-height: 15px;
+  }
+}
+
+.nav-list__link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: $dark-blue;
+  position: absolute;
+  bottom: -0.6rem;
+  left: 0;
+  right: 0;
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: transform ease-in-out 0.5s;
+}
+
+.nav-list__link:hover {
+  color: $dark-blue;
+  animation: fading 1s ease-out 0s;
+}
+
+.nav-list__link:hover::after {
+  transform: scale(1, 1);
 }

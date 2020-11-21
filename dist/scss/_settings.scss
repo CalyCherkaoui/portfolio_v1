@@ -1,10 +1,40 @@
 $classic-blue: #0f4c81;
+$dark-blue:#1e2539;
 $tangerine: #da4221;
 $my-black: #272727;
 $my-orange: #ff652f;
 $my-light-blue: #2ab2c0;
 $my-light-orange: #f8a036;
+$my_grey: #34495e;
 
-$font_very_big: 'Syncopate', sans-serif;
-$font_big: 'Abril Fatface', cursive, 'Open Sans', sans-serif;
-$font_text:  "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font_text: 'Open Sans', sans-serif;
+$font_big:  "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font_logo: 'Monoton', cursive;
+
+:root {
+  --nav_height_desk: 76px;
+  --nav_height_tablet: 127px;
+  --nav_height_mobile: 120px;
+  --footer_height_desk: 127px;
+  --footer_height_desk: 127px;
+  --footer_height_tablet: 127px;
+}
+
+@mixin mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablette {
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+

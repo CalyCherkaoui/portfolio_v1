@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
   <title>Houda | Portfolio</title>
   <link rel="stylesheet" href="scss/main.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
@@ -15,45 +15,52 @@
 
   <header class="myheader">
     <div class="my-brand-nav">
-        <a href="#home">
-          Houda<span> Cherkaoui</span>
+        <a href="#home" class="logo">
+          cher<span>.</span>
         </a>
     </div>
   
-    <ul class="my-nav-list">
-          <li class="nav-list__item"><a href="#home">home</a></li>
-          <li class="nav-list__item"><a href="#about">about</a></li>
-          <li class="nav-list__item"><a href="#stack">Tech-stack</a></li>
-          <li class="nav-list__item"><a href="#projects">projects</a></li>
-          <li class="nav-list__item"><a href="#contact">contact-me</a></li>
+    <ul class="my-nav-wrapper">
+          <li class="nav-list__item"><a class="nav-list__link" href="#home">home</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="#about">about</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="#stack">Tech-stack</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="#projects">projects</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="#contact">contact-me</a></li>
     </ul>
   
   </header>
 
   <section id="home">
-    <div class="home_title_wrapper">
-      <p>Full-stack developer.</p>
-      <p>GIS Engineer.</p>
-      <p>IT Enthousiast.</p>
-      <p>& Art lover.</p>
-    </div>
-    <div class="home_bio_wrapper">
-      <p>I'm Houda Chekaoui,a Full-Stack Web Developer with Engineering Master degree in GIS.
-         I spent 10 years impementing projects in many industries.
-         I enjoy developping efficient solutions to complex needs.
-         Follow my work below.
-      </p>
-      <hr>
-      <div class="home_bio_icones">
-        <a href="http://www.linkedin.com/in/houda-cherkaoui-64106395/"><i class="devicon-linkedin-plain colored"></i></a>
-        <a href="http://github.com/CalyCherkaoui"><i class="devicon-github-plain-wordmark colored"></i></a>
-        <a href="http://twitter.com/Houda59579688"><i class="devicon-twitter-plain colored"></i></a>
-        <a href="http://www.facebook.com/houdacherkaouicalypso"><i class="devicon-facebook-plain colored"></i></a>
+    <div class="home_content_wrapper">
 
-        <i class="devicon-rails-plain-wordmark colored"></i>
-        <i class="devicon-ruby-plain-wordmark"></i>
+      <div class="home_content">
+
+        <div class="home_title_wrapper">
+          <p>Full-stack developer.</p>
+          <p>GIS Engineer.</p>
+          <p>IT Enthousiast.</p>
+          <p>& Art lover.</p>
+        </div>
+        <div class="home_bio_wrapper">
+          <p>I'm Houda Chekaoui,a Full-Stack Web Developer with Engineering Master degree in GIS.
+             I spent 10 years impementing projects in many industries.
+             I enjoy developping efficient solutions for complex needs.
+          </p>
+        </div>
+        <hr>
+        <div class="home_bio_icones">
+          <a href="http://www.linkedin.com/in/houda-cherkaoui-64106395/"><i class="devicon-linkedin-plain"></i></a>
+          <a href="http://github.com/CalyCherkaoui"><i class="devicon-github-plain-wordmark"></i></a>
+          <a href="http://twitter.com/Houda59579688"><i class="devicon-twitter-plain"></i></a>
+          <a href="http://www.facebook.com/houdacherkaouicalypso"><i class="devicon-facebook-plain"></i></a>
+  
+          <!-- <i class="devicon-rails-plain-wordmark colored"></i>
+          <i class="devicon-ruby-plain-wordmark"></i> -->
+  
+        </div>
 
       </div>
+
     </div>
 
     <div class="home_image">
