@@ -11,8 +11,8 @@
 }
 
 #home {
-  min-height: calc(100vh - var(--nav_height_desk));
-  overflow-x: hidden;
+  height: calc(100vh - var(--nav_height_desk));
+  overflow: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -146,7 +146,7 @@
 }
 
 #stack {
-  min-height: calc(100vh - var(--nav_height_desk));
+  height: 100vh;
   overflow-x: hidden;
   background-color: #15202b;
   -webkit-box-orient: vertical;
@@ -218,6 +218,10 @@
   margin: auto;
 }
 
+#projects {
+  background-color: aqua;
+}
+
 *,
 *::after,
 *::before {
@@ -260,11 +264,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  position: fixed;
-  top: -1px;
-  z-index: 4000;
-  -webkit-box-shadow: 0 2px 6px 0 rgba(10, 22, 78, 0.15);
-  box-shadow: 0 2px 6px 0 rgba(10, 22, 78, 0.15);
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -321,6 +320,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  list-style: none;
 }
 
 .nav-list__item {

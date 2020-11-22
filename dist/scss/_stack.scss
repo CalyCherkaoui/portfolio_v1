@@ -1,5 +1,6 @@
 #stack {
-  min-height: calc(100vh - var(--nav_height_desk));
+  // min-height: calc(100vh - var(--nav_height_desk));
+  height: 100vh;
   overflow-x: hidden;
   background-color: $dark-blue;
   flex-direction: column;

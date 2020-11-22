@@ -1,16 +1,38 @@
-function initialize() {
-  var latitude = new google.maps.LatLng(40.650002, -73.949997);
-  var zoomCenter = {
-    zoom: 2,
-    center: latitude,
-  };
-  var map = new google.maps.Map(document.getElementById("map"), zoomCenter);
+gsap.registerPlugin(ScrollTrigger);
 
-  var marker = new google.maps.Marker({
-    position: lattitude,
-    map: map,
-    title: "festival location",
+gsap.utils.toArray(".panel").forEach((panel, i) => {
+  ScrollTrigger.create({
+    trigger: panel,
+    start: "top top", 
+    pin: true, 
+    pinSpacing: false,
+    scrub: 1
   });
-}
+});
 
-google.maps.event.addDomListener(window, "load", initialize);
+ScrollTrigger.create({
+  // snap: 1 / 3
+});
+
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// let sections = gsap.utils.toArray(".panel");
+
+// gsap.to(sections, {
+//   yPercent: -100 * (sections.length - 1),
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: "#home",
+//     pin: true,
+//     scrub: 1,
+//     snap: 1 / (sections.length - 1),
+//     // base vertical scrolling on how wide the container is so it feels more natural.
+//     end: () => "+=" + document.querySelector("#home").offsetHeight
+//   }
+// });
+
+// ScrollTrigger.create({
+// //   // snap: 1 / 8 // snap whole page to the closest section!
+//   pinSpacing: false
+// });

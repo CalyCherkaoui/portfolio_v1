@@ -1,7 +1,8 @@
 #home {
   // background-color: yellow;
-  min-height: calc(100vh - var(--nav_height_desk));
-  overflow-x: hidden;
+  height: calc(100vh - var(--nav_height_desk));
+  // height: 100vh;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
