@@ -45,6 +45,7 @@ background-color: $text_project_medium;
 
 .project_content_title {
   font-size: 3.5em;
+  width: 70%;
   // font-family: $font_accent;
   font-family: $font_big;
   color: $text_project_dark;
@@ -60,7 +61,7 @@ background-color: $text_project_medium;
 }
 
 .project_content_tags {
-  font-size: 1em;
+  font-size: 1.3em;
   font-family: $font_big;
   color: $tangerine;
   width: 60%;
@@ -85,7 +86,7 @@ background-color: $text_project_medium;
 
 .project_illustration {
   position: relative;
-  margin: 0 10% 0 auto;
+  margin: 0 6% 0 auto;
   overflow: visible;
   // padding-top: 56.25%;
   height: 80%;
@@ -102,10 +103,16 @@ background-color: $text_project_medium;
     max-height: 90%;
     overflow: hidden;
     box-shadow: 28px 20px 31px -13px rgba(0, 0, 0, 0.6);
-    filter: brightness(63%);
-    cursor: pointer;
   }
 }
+
+// .project_image_light {
+//   filter: brightness(63%);
+// }
+
+// .project_image_dark {
+//   filter: brightness(100%)
+// }
 
 .project_illustration_nav {
   position: absolute;
