@@ -1,16 +1,21 @@
 $classic-blue: #0f4c81;
 $dark-blue:rgb(21, 32, 43);
-$my-blue: rgb(29, 161, 242);
+$my-blue: #a8dadc;
 $tangerine: #da4221;
 $my-black: #272727;
 $my-orange: #ff652f;
 $my-light-blue: #2ab2c0;
 $my-light-orange: #f8a036;
 $my_grey: #34495e;
+$text_project_dark: #1d3557;
+$text_project_light: #f1faee;
+$text_project_medium: #457b9d;
+
 
 $font_text: 'Open Sans', sans-serif;
 $font_big:  "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font_logo: 'Monoton', cursive;
+$font_accent:  'Abril Fatface', cursive;
 
 :root {
   --nav_height_desk: 76px;
