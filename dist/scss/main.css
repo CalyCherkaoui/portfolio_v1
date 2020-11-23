@@ -236,6 +236,8 @@ html {
   min-width: 22rem;
   min-height: 70rem;
   display: block;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
 }
 
 body {
@@ -247,6 +249,10 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.panel {
+  scroll-snap-align: start;
 }
 
 .myheader {

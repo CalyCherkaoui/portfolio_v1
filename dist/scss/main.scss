@@ -19,6 +19,7 @@ html {
   min-width: 22rem;
   min-height: 70rem;
   display: block;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -32,6 +33,9 @@ a {
   color: inherit;
 }
 
+.panel {
+  scroll-snap-align: start;
+}
 // navigation
 
 .myheader {
