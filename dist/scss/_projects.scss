@@ -12,21 +12,26 @@
   // background-color: purple;
 }
 
-.project_wrapper_light {
-  background-color: $text_project_light;
-}
+// .project_wrapper_light {
+//   background-color: $text_project_light;
+// }
 
 .project_wrapper_dark {
-  background-color: $dark-blue;
+  // background-color: $dark-blue;
+  background: url(../img/white_geo_cover.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.project_wrapper_medium {
-background-color: $text_project_medium;
-}
+// .project_wrapper_medium {
+// background-color: $text_project_medium;
+// }
 
 .project_content {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 6%;
   overflow: hidden;
   z-index: 500;
@@ -34,7 +39,7 @@ background-color: $text_project_medium;
   // background-color: pink;
   font-size: 1rem;
   hr {
-    width: 20%;
+    width: 70%;
     height: 5px;
     background: $tangerine;
     border-radius: 10px;
@@ -45,17 +50,19 @@ background-color: $text_project_medium;
 
 .project_content_title {
   font-size: 3.5em;
-  width: 70%;
+  max-width: 70%;
   // font-family: $font_accent;
   font-family: $font_big;
-  color: $text_project_dark;
+  // color: $text_project_dark;
+  color: $dark-blue;
 }
 
 .project_content_description {
   font-size: 1em;
   font-family: $font_text;
   width: 60%;
-  padding: 2em;
+  margin-top: 3em;
+  padding-right: 2em;
   line-height: 1.6;
   // background-color: springgreen;
 }
@@ -64,6 +71,7 @@ background-color: $text_project_medium;
   font-size: 1.3em;
   font-family: $font_big;
   color: $tangerine;
+  margin-top: 1rem;
   width: 60%;
   text-align: center;
   list-style: none;
@@ -76,17 +84,18 @@ background-color: $text_project_medium;
   }
 }
 
-.project_light {
-  color: $text_project_dark;
-}
+// .project_light {
+//   color: $text_project_dark;
+// }
 
 .project_dark {
-  color: $my-blue;
+  // color: $my-blue;
+  color: $dark-blue;
 }
 
 .project_illustration {
   position: relative;
-  margin: 0 6% 0 auto;
+  margin: 0 5% 0 auto;
   overflow: visible;
   // padding-top: 56.25%;
   height: 80%;
@@ -116,8 +125,8 @@ background-color: $text_project_medium;
 
 .project_illustration_nav {
   position: absolute;
-  top: 4%;
-  right: -10%;
+  top: 0;
+  right: 0;
   z-index: 500;
   height: 10%;
   min-width: 30%;
@@ -126,7 +135,7 @@ background-color: $text_project_medium;
   flex-direction: row;
   justify-content: end;
   align-items: center;
-  background: rgba(21, 32, 43, 0.7);
+  // background: rgba(21, 32, 43, 0.7);
 }
 
 .project_link,
@@ -138,7 +147,7 @@ background-color: $text_project_medium;
   letter-spacing: 0.938px;
   line-height: 23px;
   font-weight: 800;
-  color: $text_project_light;
+  color: $dark-blue;
   @include mobile {
     font-size: 0.8rem;
     letter-spacing: 0.8px;
@@ -162,7 +171,7 @@ background-color: $text_project_medium;
 .project_technologie {
   position: absolute;
   bottom: 6%;
-  right: 2%;
+  right: 1%;
   font-size: 7em;
   font-family: $font_accent;
   z-index: 500;

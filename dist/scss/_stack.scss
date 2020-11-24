@@ -1,14 +1,19 @@
 #stack {
-  // min-height: calc(100vh - var(--nav_height_desk));
   height: 100vh;
   overflow-x: hidden;
-  background-color: $dark-blue;
+  background-color: $text_project_light;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.stack_wrapper {
+  width: 90%;
+}
+
 .stack_header {
+  // background-color: yellow;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -18,7 +23,7 @@
   h1 {
     font-family: $font_big;
     font-size: 3rem;
-    color: $my-blue;
+    color: $text_project_dark;
     padding: 1rem;
   }
 }
@@ -31,6 +36,7 @@
 }
 
 .stack_list {
+  // background-color: aqua;
   list-style: none;
   height: fit-content;
   max-width: 70%;
@@ -44,9 +50,13 @@
 
 .stack_item {
   text-align: center;
-  height: 8rem;
+  height: 9rem;
   svg {
-    width: 6rem;
+    width: 8rem;
+    padding: 1rem;
     margin: auto;
+    -webkit-box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
+       -moz-box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
+            box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
   }
 }

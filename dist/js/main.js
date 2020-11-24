@@ -10,9 +10,9 @@ gsap.utils.toArray(".panel").forEach((panel, i) => {
   });
 });
 
-ScrollTrigger.create({
-  snap: 1 / 6
-});
+// ScrollTrigger.create({
+//   snap: 1 / 6
+// });
 
 // parallax
 
