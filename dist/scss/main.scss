@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import "settings";
+@import "hero";
 @import "home";
 @import "stack";
 @import "projects";
@@ -45,15 +46,20 @@ a {
   margin: 0;
   padding: 0.3rem 0.1rem 0.8rem 0.1rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  // position: fixed;
+  background: transparent;
+  overflow: hidden;
+  position: fixed;
   // top: -1px;
-  // z-index: 4000;
-  // -webkit-box-shadow: 0 2px 6px 0 rgba(10,22,78,0.15);
-  //    -moz-box-shadow: 0 2px 6px 0 rgba(10,22,78,0.15);
-  //         box-shadow: 0 2px 6px 0 rgba(10,22,78,0.15);
+  z-index: 4000;
+  // -webkit-box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
+  //    -moz-box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
+  //         box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
+  // -webkit-box-shadow: 0 3px 7px 0 rgba(234, 236, 245, 0.15);
+  //    -moz-box-shadow: 0 3px 7px 0 rgba(234, 236, 245, 0.15);
+  //         box-shadow: 0 3px 7px 0 rgba(234, 236, 245, 0.15);
   @include tablette {
     height: var(--nav_height_tablet);
     flex-direction: column;
@@ -67,24 +73,27 @@ a {
 .my-brand-nav {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   overflow: hidden;
 }
 
 .logo {
-  font-size: inherit;
+  // background-color: white;
+  // font-size: 30%;
   overflow: hidden;
   text-decoration: none !important;
-  color: $classic-blue;
+  // color: $classic-blue;
+  color: $my-light-blue;
   font-family: $font_logo;
 
   &:hover {
-    color: $my-light-blue;
+    color: $tangerine;
   }
 
   span {
     font-weight: 1000;
     color: $tangerine;
+    // font-size: 3em !important;
   }
 }
 
@@ -103,14 +112,15 @@ a {
 }
 
 .nav-list__link {
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-family: $font_big;
   letter-spacing: 0.938px;
   line-height: 23px;
   font-weight: 600;
-  color: $dark-blue;
+  color: $my-light-blue;
   text-transform: uppercase;
   position: relative;
+  overflow: hidden;
 
   @include mobile {
     font-size: 0.8rem;
@@ -123,7 +133,7 @@ a {
   content: "";
   display: block;
   height: 2px;
-  background-color: $dark-blue;
+  background-color: $my-light-blue;
   position: absolute;
   bottom: -0.6rem;
   left: 0;
@@ -134,7 +144,7 @@ a {
 }
 
 .nav-list__link:hover {
-  color: $dark-blue;
+  color: $tangerine;
   animation: fading 1s ease-out 0s;
 }
 
