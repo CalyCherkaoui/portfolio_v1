@@ -1,9 +1,11 @@
 .vertical_nav {
   background-color: pink;
+  position: fixed;
   height: 100vh;
   width: 20%;
   display: grid;
   grid-template-rows: 10% auto;
+  z-index: 10;
 }
 
 .vertical_logo {
@@ -22,21 +24,27 @@
   align-items: flex-start;
 }
 
-.vertical_nav_link,
-.vertical_nav_active {
+.vertical_nav_link {
   margin: 0 0 1.5rem 1rem;
   border-radius: 10px;
   overflow: visible;
   position: relative;
+
+  background-color: $text_project_dark;
+  height: 5px;
+  width: 13%;
+
   span {
     display: none;
     position: absolute;
     top: -0.5rem;
     left: 0;
+    color:  $text_project_dark;
     font-size: 0.8rem;
     font-weight: 600;
     font-family: $font_big;
     text-transform: uppercase;
+    transition: ease-in-out 250ms;
   }
 
   &:hover {
@@ -47,20 +55,12 @@
   }
 }
 
-.vertical_nav_link {
-  background-color: $text_project_dark;
-  height: 5px;
-  width: 13%;
-  span {
-    color:  $text_project_dark;
-  }
-}
 
 .vertical_nav_active {
-  background-color: $tangerine;
-  height: 7px;
-  width: 23%;
+  background-color: $tangerine !important;
+  height: 7px !important;
+  width: 23% !important;
   span {
-    color: $tangerine;
+    color: $tangerine !important;
   }
 }

@@ -7,6 +7,7 @@
 @import "vertical";
 @import "stack";
 @import "projects";
+@import "others";
 
 *,
 *::after,
@@ -22,6 +23,7 @@ html {
   min-height: 70rem;
   display: block;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -39,8 +41,9 @@ a {
   scroll-snap-align: start;
 }
 
-.slide {
-  z-index: 100;
+
+.navigation_scrolled {
+  display: none !important;
 }
 
 // navigation
@@ -59,9 +62,9 @@ a {
   position: fixed;
   // top: -1px;
   z-index: 1;
-  // -webkit-box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
-  //    -moz-box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
-  //         box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
+  -webkit-box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
+     -moz-box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
+          box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
   // -webkit-box-shadow: 0 3px 7px 0 rgba(234, 236, 245, 0.15);
   //    -moz-box-shadow: 0 3px 7px 0 rgba(234, 236, 245, 0.15);
   //         box-shadow: 0 3px 7px 0 rgba(234, 236, 245, 0.15);

@@ -13,22 +13,51 @@
 
 <body>
 
-  <header class="myheader">
+<header class="navigation_horizontal">
+  <nav class="myheader">
+    <div class="my-brand-nav">
+        <a href="#whoami" class="logo">
+          cher<span>.</span>
+        </a>
+    </div>
+    <ul class="my-nav-wrapper">
+          <li class="nav-list__item"><a class="nav-list__link" href="#whoami">whoami</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="#stack">Tech-Stack</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="#projects">projects</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="#projects">articles</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="#contact">contact-me</a></li>
+    </ul>
+  </nav>
+</header>
 
-      <div class="my-brand-nav">
-          <a href="#whoami" class="logo">
-            cher<span>.</span>
-          </a>
-      </div>
-      <ul class="my-nav-wrapper">
-            <li class="nav-list__item"><a class="nav-list__link" href="#whoami">whoami</a></li>
-            <li class="nav-list__item"><a class="nav-list__link" href="#stack">Tech-Stack</a></li>
-            <li class="nav-list__item"><a class="nav-list__link" href="#projects">projects</a></li>
-            <li class="nav-list__item"><a class="nav-list__link" href="#projects">articles</a></li>
-            <li class="nav-list__item"><a class="nav-list__link" href="#contact">contact-me</a></li>
-      </ul>
-  
-  </header>
+<header class="navigation_vertical">
+  <nav class="vertical_nav">
+    <div class="vertical_logo">
+      <a href="#whoami" class="logo">
+        cher<span>.</span>
+      </a>
+    </div>
+    <div class="vertical_nav_list">
+      <a href="#whoami" class="vertical_nav_link">
+          <span>home</span>
+      </a>
+      <a href="#stack" class="vertical_nav_link">
+        <span>Tech-stack</span>
+      </a>
+      <a href="#projects" class="vertical_nav_link">
+        <span>Projects</span>
+      </a>
+      <a href="#articles" class="vertical_nav_link">
+        <span>articles</span>
+      </a>
+      <a href="#contact" class="vertical_nav_link">
+        <span>contact</span>
+      </a>
+    </div>
+  </nav>
+</header>
+
+
 
   <section id="whoami" class="hero">
 
@@ -68,30 +97,7 @@
 
   </section>
 
-  <nav class="vertical_nav">
-    <div class="vertical_logo">
-      <a href="#whoami" class="logo">
-        cher<span>.</span>
-      </a>
-    </div>
-    <div class="vertical_nav_list">
-      <a href="#whoami" class="vertical_nav_link">
-          <span>home</span>
-        <!-- <a href="#whoami" class="verical_text">whoami</a> -->
-      </a>
-      <a href="#whoami" class="vertical_nav_active">
-        <span>projects</span>
-      <!-- <a href="#whoami" class="verical_text">whoami</a> -->
-      </a>
-      <a href="#whoami" class="vertical_nav_link">
-        <span></span>
-      <!-- <a href="#whoami" class="verical_text">whoami</a> -->
-      </a>
-    </div>
-  </nav>
-
-
-  <section id="stack" class="panel">
+  <section id="stack">
 
     <div class="stack_wrapper">
       <div class="stack_header">
@@ -194,218 +200,230 @@
 
   </section>
 
-  <section id="projects" class="project_wrapper_dark panel">
-    <div class="project_wrapper">
-      <div class="project_content">
-        <h1 class="project_content_title project_dark">
-          Photosynthèse Magazine-blog
-        </h1>
-        <hr>
-        <p class="project_content_description project_dark">
-          I built a community Blog magazine specialized in Plants, Ecological farming, and Home gardening. This is the Capstone project for the end of Ruby On Rails Module in Microverse currriculum.
-          This project was built following the specifications , and user cases given by Microverse.
-        </p>
-        <ul class="project_content_tags">
-          <li>#RubyOnRails</li>
-          <li>#Rspec</li>
-          <li>Blog</li>
-          <li>#Rails_admin</li>
-          <li>#devise</li>
-          <li>#cancancan</li>
-          <li>#AWS</li>
-        </ul>
-      </div>
+  <section id="projects">
 
-      <div class="project_technologie">
-        <p>Rails</p>
-      </div>
-
-      <div class="project_illustration">
-        <img src="img/photosynthese.png" alt="project" class="project_image_light">
-
-      </div>
-
-      <div class="project_illustration_nav">
-        <a href="https://whispering-dawn-59076.herokuapp.com/" class="project_link">Demo</a>
-        <a href="https://github.com/CalyCherkaoui/blogging_app_ror" class="project_link">Code</a>
-        <a href="https://www.notion.so/Lifestyle-articles-b82a5f10122b4cec924cd5d4a6cf7561" class="project_link">specifications</a>
-        <div class="collection_next">
-          <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
-          </svg>
+    <div class="project_wrapper_dark panel">
+      <div class="project_wrapper">
+        <div class="project_content">
+          <h1 class="project_content_title project_dark">
+            Photosynthèse Magazine-blog
+          </h1>
+          <hr>
+          <p class="project_content_description project_dark">
+            I built a community Blog magazine specialized in Plants, Ecological farming, and Home gardening. This is the Capstone project for the end of Ruby On Rails Module in Microverse currriculum.
+            This project was built following the specifications , and user cases given by Microverse.
+          </p>
+          <ul class="project_content_tags">
+            <li>#RubyOnRails</li>
+            <li>#Rspec</li>
+            <li>Blog</li>
+            <li>#Rails_admin</li>
+            <li>#devise</li>
+            <li>#cancancan</li>
+            <li>#AWS</li>
+          </ul>
+        </div>
+  
+        <div class="project_technologie">
+          <p>Rails</p>
+        </div>
+  
+        <div class="project_illustration">
+          <img src="img/photosynthese.png" alt="project" class="project_image_light">
+  
+        </div>
+  
+        <div class="project_illustration_nav">
+          <a href="https://whispering-dawn-59076.herokuapp.com/" class="project_link">Demo</a>
+          <a href="https://github.com/CalyCherkaoui/blogging_app_ror" class="project_link">Code</a>
+          <a href="https://www.notion.so/Lifestyle-articles-b82a5f10122b4cec924cd5d4a6cf7561" class="project_link">specifications</a>
+          <div class="collection_next">
+            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="project_wrapper_dark panel">
-    <div class="project_wrapper">
-      <div class="project_content">
-        <h1 class="project_content_title project_dark">
-          Gossip-land: a Twitter clone.
-        </h1>
-        <hr>
-        <p class="project_content_description project_dark">
-          For pure learning purposes, I've tried here to build a Twitter clone using what I've learned so far about Rails: Models, MVC, REST, Sessions, Cookies, Authentication.
-        </p>
-        <ul class="project_content_tags">
-          <li>#rubyOnRails</li>
-          <li>#Social_media</li>
-          <li>#Gravatar</li>
-          <li>#Session_cookies</li>
-          <li>#devise</li>
-          <li>#bulma</li>
-        </ul>
-      </div>
-      <div class="project_illustration">
-          <img src="img/gossipland.png" alt="gossipland" class="project_image_dark">
-      </div>
-      <div class="project_technologie">
-        <p>Rails</p>
-      </div>
-      <div class="project_illustration_nav">
-        <a href="#" class="project_link">Demo</a>
-        <a href="https://github.com/CalyCherkaoui/my_twitter_clone" class="project_link">Code</a>
-        <div class="collection_next">
-          <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
-          </svg>
+  
+    <div class="project_wrapper_dark panel">
+      <div class="project_wrapper">
+        <div class="project_content">
+          <h1 class="project_content_title project_dark">
+            Gossip-land: a Twitter clone.
+          </h1>
+          <hr>
+          <p class="project_content_description project_dark">
+            For pure learning purposes, I've tried here to build a Twitter clone using what I've learned so far about Rails: Models, MVC, REST, Sessions, Cookies, Authentication.
+          </p>
+          <ul class="project_content_tags">
+            <li>#rubyOnRails</li>
+            <li>#Social_media</li>
+            <li>#Gravatar</li>
+            <li>#Session_cookies</li>
+            <li>#devise</li>
+            <li>#bulma</li>
+          </ul>
+        </div>
+        <div class="project_illustration">
+            <img src="img/gossipland.png" alt="gossipland" class="project_image_dark">
+        </div>
+        <div class="project_technologie">
+          <p>Rails</p>
+        </div>
+        <div class="project_illustration_nav">
+          <a href="#" class="project_link">Demo</a>
+          <a href="https://github.com/CalyCherkaoui/my_twitter_clone" class="project_link">Code</a>
+          <div class="collection_next">
+            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="project_wrapper_dark panel">
-    <div class="project_wrapper">
-      <div class="project_content">
-        <h1 class="project_content_title project_dark">
-          Project title
-        </h1>
-        <hr>
-        <p class="project_content_description project_dark">
-          In this project, I built a Web-page from scratch based on a given UX design with HTML and CSS. The web-page is responsive in 3 different breakpoints.
-          For the styling, I worked with Scss modules:
-          <br>
-          - Setting up the Overall parameters
-          <br>
-          - Variables (typography, colors palette)
-          <br>
-          - Functions and mixins
-          <br>
-          - Setting up the animations used in the project
-        </p>
-        <ul class="project_content_tags">
-          <li>#Sass</li>
-          <li>#Html_css</li>
-          <li>#responsive</li>
-          <li>#UX</li>
-          <li>#Stickler_linter</li>
-        </ul>
-      </div>
-      <div class="project_illustration">
-          <img src="img/festivallyyours.png" alt="project" class="project_image">
-      </div>
-      <div class="project_technologie">
-        <p>Sass</p>
-      </div>
-      <div class="project_illustration_nav">
-        <a href="https://rawcdn.githack.com/CalyCherkaoui/CapstoneProject-FestivallyYours/6bc2e20817ed38cdb7bdd109092d1bc0d68ee30b/dist/index.html" class="project_link">Demo</a>
-        <a href="https://github.com/CalyCherkaoui/CapstoneProject-FestivallyYours" class="project_link">Code</a>
-        <a href="https://www.behance.net/gallery/25563385/PatashuleKE" class="project_link">specifications</a>
-        <div class="collection_next">
-          <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
-          </svg>
+  
+    <div class="project_wrapper_dark panel">
+      <div class="project_wrapper">
+        <div class="project_content">
+          <h1 class="project_content_title project_dark">
+            Project title
+          </h1>
+          <hr>
+          <p class="project_content_description project_dark">
+            In this project, I built a Web-page from scratch based on a given UX design with HTML and CSS. The web-page is responsive in 3 different breakpoints.
+            For the styling, I worked with Scss modules:
+            <br>
+            - Setting up the Overall parameters
+            <br>
+            - Variables (typography, colors palette)
+            <br>
+            - Functions and mixins
+            <br>
+            - Setting up the animations used in the project
+          </p>
+          <ul class="project_content_tags">
+            <li>#Sass</li>
+            <li>#Html_css</li>
+            <li>#responsive</li>
+            <li>#UX</li>
+            <li>#Stickler_linter</li>
+          </ul>
+        </div>
+        <div class="project_illustration">
+            <img src="img/festivallyyours.png" alt="project" class="project_image">
+        </div>
+        <div class="project_technologie">
+          <p>Sass</p>
+        </div>
+        <div class="project_illustration_nav">
+          <a href="https://rawcdn.githack.com/CalyCherkaoui/CapstoneProject-FestivallyYours/6bc2e20817ed38cdb7bdd109092d1bc0d68ee30b/dist/index.html" class="project_link">Demo</a>
+          <a href="https://github.com/CalyCherkaoui/CapstoneProject-FestivallyYours" class="project_link">Code</a>
+          <a href="https://www.behance.net/gallery/25563385/PatashuleKE" class="project_link">specifications</a>
+          <div class="collection_next">
+            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="project_wrapper_dark panel">
-    <div class="project_wrapper">
-      <div class="project_content">
-        <h1 class="project_content_title project_dark">
-          Job offers Web Scraper
-        </h1>
-        <hr>
-        <p class="project_content_description project_dark">
-          I built a web command-line scraper for search results of a Job offer website.
-          <br>
-          This scraper helps you to:
-          <br>
-          - Search by key words in https://www.indeed.com web page
-          <br>
-          - Scrape the results of the search
-          <br>
-          - Display the scraped data in terminal or to export them into a CSV or a Text files
-        </p>
-        <ul class="project_content_tags">
-          <li>#ruby</li>
-          <li>#Web_Scrapper</li>
-          <li>#Object_oriented_programming</li>
-          <li>#rubocop</li>
-          <li>#Nokogiri</li>
-          <li>#Rspec</li>
-        </ul>
-      </div>
-      <div class="project_illustration">
-          <img src="img/scrapper.png" alt="webscrapper" class="project_image">
-      </div>
-      <div class="project_technologie">
-        <p>Ruby</p>
-      </div>
-
-      <div class="project_illustration_nav">
-        <a href="#" class="project_link">Demo</a>
-        <a href="https://github.com/CalyCherkaoui/Web_Scraper_Ruby" class="project_link">Code</a>
-        <div class="collection_next">
-          <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
-          </svg>
+  
+    <div class="project_wrapper_dark panel">
+      <div class="project_wrapper">
+        <div class="project_content">
+          <h1 class="project_content_title project_dark">
+            Job offers Web Scraper
+          </h1>
+          <hr>
+          <p class="project_content_description project_dark">
+            I built a web command-line scraper for search results of a Job offer website.
+            <br>
+            This scraper helps you to:
+            <br>
+            - Search by key words in https://www.indeed.com web page
+            <br>
+            - Scrape the results of the search
+            <br>
+            - Display the scraped data in terminal or to export them into a CSV or a Text files
+          </p>
+          <ul class="project_content_tags">
+            <li>#ruby</li>
+            <li>#Web_Scrapper</li>
+            <li>#Object_oriented_programming</li>
+            <li>#rubocop</li>
+            <li>#Nokogiri</li>
+            <li>#Rspec</li>
+          </ul>
+        </div>
+        <div class="project_illustration">
+            <img src="img/scrapper.png" alt="webscrapper" class="project_image">
+        </div>
+        <div class="project_technologie">
+          <p>Ruby</p>
+        </div>
+  
+        <div class="project_illustration_nav">
+          <a href="#" class="project_link">Demo</a>
+          <a href="https://github.com/CalyCherkaoui/Web_Scraper_Ruby" class="project_link">Code</a>
+          <div class="collection_next">
+            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="project_wrapper_dark panel">
-    <div class="project_wrapper">
-      <div class="project_content">
-        <h1 class="project_content_title project_dark">
-          Project title
-        </h1>
-        <hr>
-        <p class="project_content_description project_dark">
-          In this project, I tried to build a clone of the Newsweek web page. The purpose of this exercise is to practice web responsiveness, typography styling and, above all ,to learn about Bootsrap and its uses.
-        </p>
-        <ul class="project_content_tags">
-          <li>#bootstrap</li>
-          <li>#html_css</li>
-          <li>#responsive</li>
-          <li>#flex</li>
-          <li>#grid</li>
-        </ul>
-      </div>
-      <div class="project_illustration">
-          <img src="img/newsweek.png" alt="project" class="project_image">
-      </div>
-      <div class="project_technologie">
-        <p>Bootstrap</p>
-      </div>
-      <div class="project_illustration_nav">
-        <a href="https://rawcdn.githack.com/CalyCherkaoui/Newsweek-cloneWithBootstrap/4091f8fc49473858b17e89458b584c35ee149818/index.html" class="project_link">Demo</a>
-        <a href="https://github.com/CalyCherkaoui/Newsweek-cloneWithBootstrap" class="project_link">Code</a>
-        <div class="collection_next">
-          <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
-          </svg>
+  
+    <div class="project_wrapper_dark panel">
+      <div class="project_wrapper">
+        <div class="project_content">
+          <h1 class="project_content_title project_dark">
+            Project title
+          </h1>
+          <hr>
+          <p class="project_content_description project_dark">
+            In this project, I tried to build a clone of the Newsweek web page. The purpose of this exercise is to practice web responsiveness, typography styling and, above all ,to learn about Bootsrap and its uses.
+          </p>
+          <ul class="project_content_tags">
+            <li>#bootstrap</li>
+            <li>#html_css</li>
+            <li>#responsive</li>
+            <li>#flex</li>
+            <li>#grid</li>
+          </ul>
+        </div>
+        <div class="project_illustration">
+            <img src="img/newsweek.png" alt="project" class="project_image">
+        </div>
+        <div class="project_technologie">
+          <p>Bootstrap</p>
+        </div>
+        <div class="project_illustration_nav">
+          <a href="https://rawcdn.githack.com/CalyCherkaoui/Newsweek-cloneWithBootstrap/4091f8fc49473858b17e89458b584c35ee149818/index.html" class="project_link">Demo</a>
+          <a href="https://github.com/CalyCherkaoui/Newsweek-cloneWithBootstrap" class="project_link">Code</a>
+          <div class="collection_next">
+            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
+
   </section>
 
- <footer class="panel">
+  <section id="articles">
+    Articles
+  </section>
+
+  <section id="contact">
+    Contact
+  </section>
+
+ <footer class="my_footer">
     <h1>Houda CHERKAOUI</h1>
-  </footer>
+ </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
