@@ -34,7 +34,6 @@
 
 
 .home_content {
-  // background-color: transparentize($color: #bfdde9, $amount: 0.8);
   width: 70%;
   padding: 5%;
   display: flex;
@@ -64,19 +63,35 @@
   }
 
   @include tablette{
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: 800;
   }
 }
 
 .home_bio_wrapper {
-  color: $my-blue;
+  color: white;
   font-size: 1.3rem;
   font-family: $font_text;
   font-weight: 600;
   margin-top: 1.2rem;
   line-height: 1.5;
   padding-right: 20%;
+
+  @include mobile {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    line-height: 1.5;
+    padding-right: 0;
+  }
+
+  @include tablette{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    line-height: 1.5;
+    padding-right: 0;
+  }
 }
 
 .home_bio_icones {
@@ -88,6 +103,7 @@
     margin-right: 0.5rem;
     &:hover {
       color: $tangerine;
+      transition: all .5s ease-in-out;
     }
   }
 }

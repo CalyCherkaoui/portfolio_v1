@@ -93,19 +93,39 @@
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .home_title_wrapper {
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: 800;
   }
 }
 
 .home_bio_wrapper {
-  color: #a8dadc;
+  color: white;
   font-size: 1.3rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   margin-top: 1.2rem;
   line-height: 1.5;
   padding-right: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .home_bio_wrapper {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    line-height: 1.5;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .home_bio_wrapper {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    line-height: 1.5;
+    padding-right: 0;
+  }
 }
 
 .home_bio_icones {
@@ -121,6 +141,8 @@
 
 .home_bio_icones a:hover {
   color: #da4221;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .vertical_nav {
@@ -543,10 +565,6 @@ a {
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .myheader {
     height: var(--nav_height_tablet);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
@@ -561,12 +579,6 @@ a {
   padding-right: 1.5rem;
   font-size: 2rem;
   overflow: hidden;
-}
-
-@media screen and (max-width: 768px) {
-  .my-brand-nav {
-    font-size: 1.5rem;
-  }
 }
 
 .logo {
@@ -594,14 +606,20 @@ a {
   list-style: none;
 }
 
-.nav-list__item {
-  padding: 0.8rem 0.9rem;
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .my-nav-wrapper {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .nav-list__item {
-    padding: 0.4rem;
+  .my-nav-wrapper {
+    display: none;
   }
+}
+
+.nav-list__item {
+  padding: 0.8rem 0.9rem;
 }
 
 .nav-list__link {
@@ -614,14 +632,6 @@ a {
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
-}
-
-@media screen and (max-width: 768px) {
-  .nav-list__link {
-    font-size: 0.8rem;
-    letter-spacing: 0.8px;
-    line-height: 15px;
-  }
 }
 
 .nav-list__link::after {

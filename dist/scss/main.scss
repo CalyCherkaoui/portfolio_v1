@@ -63,7 +63,6 @@ a {
   z-index: 4;
   @include tablette {
     height: var(--nav_height_tablet);
-    flex-direction: column;
   }
   @include mobile {
     height: var(--nav_height_mobile);
@@ -75,10 +74,6 @@ a {
   padding-right: 1.5rem;
   font-size: 2rem;
   overflow: hidden;
-
-  @include mobile {
-    font-size: 1.5rem;
-  }
 }
 
 .logo {
@@ -97,13 +92,17 @@ a {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
+
+  @include tablette {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
 }
 
 .nav-list__item {
   padding: 0.8rem 0.9rem;
-  @include mobile {
-    padding: 0.4rem;
-  }
 }
 
 .nav-list__link {
@@ -116,12 +115,6 @@ a {
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
-
-  @include mobile {
-    font-size: 0.8rem;
-    letter-spacing: 0.8px;
-    line-height: 15px;
-  }
 }
 
 .nav-list__link::after {
@@ -161,7 +154,6 @@ a {
   height: 55px;
   cursor: pointer;
   transition: all .5s ease-in-out;
-  // border: 1px solid white;
   overflow: visible;
 }
 
