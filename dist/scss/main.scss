@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import "settings";
 @import "hero";
+@import "vertical";
 @import "stack";
 @import "projects";
 
@@ -37,6 +38,11 @@ a {
 .panel {
   scroll-snap-align: start;
 }
+
+.slide {
+  z-index: 100;
+}
+
 // navigation
 
 .myheader {
@@ -52,7 +58,7 @@ a {
   overflow: hidden;
   position: fixed;
   // top: -1px;
-  z-index: 4000;
+  z-index: 1;
   // -webkit-box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
   //    -moz-box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
   //         box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);

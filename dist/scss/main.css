@@ -113,6 +113,91 @@
   color: #da4221;
 }
 
+.vertical_nav {
+  background-color: pink;
+  height: 100vh;
+  width: 20%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10% auto;
+      grid-template-rows: 10% auto;
+}
+
+.vertical_logo {
+  padding-left: 1.5rem;
+  font-size: 2rem;
+  overflow: hidden;
+  background-color: crimson;
+}
+
+.vertical_nav_list {
+  background-color: teal;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.vertical_nav_link,
+.vertical_nav_active {
+  margin: 0 0 1.5rem 1rem;
+  border-radius: 10px;
+  overflow: visible;
+  position: relative;
+}
+
+.vertical_nav_link span,
+.vertical_nav_active span {
+  display: none;
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+}
+
+.vertical_nav_link:hover,
+.vertical_nav_active:hover {
+  background: none !important;
+}
+
+.vertical_nav_link:hover span,
+.vertical_nav_active:hover span {
+  display: inline;
+}
+
+.vertical_nav_link {
+  background-color: #1d3557;
+  height: 5px;
+  width: 13%;
+}
+
+.vertical_nav_link span {
+  color: #1d3557;
+}
+
+.vertical_nav_active {
+  background-color: #da4221;
+  height: 7px;
+  width: 23%;
+}
+
+.vertical_nav_active span {
+  color: #da4221;
+}
+
 #stack {
   height: 100vh;
   overflow-x: hidden;
@@ -413,6 +498,10 @@ a {
   scroll-snap-align: start;
 }
 
+.slide {
+  z-index: 100;
+}
+
 .myheader {
   width: 100%;
   height: var(--nav_height_desk);
@@ -434,7 +523,7 @@ a {
   background: transparent;
   overflow: hidden;
   position: fixed;
-  z-index: 4000;
+  z-index: 1;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
