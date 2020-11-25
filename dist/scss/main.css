@@ -114,7 +114,6 @@
 }
 
 .vertical_nav {
-  background-color: pink;
   position: fixed;
   height: 100vh;
   width: 20%;
@@ -129,11 +128,9 @@
   padding-left: 1.5rem;
   font-size: 2rem;
   overflow: hidden;
-  background-color: crimson;
 }
 
 .vertical_nav_list {
-  background-color: teal;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,10 +298,10 @@
 .project_content {
   position: absolute;
   top: 15%;
-  left: 6%;
+  left: 10%;
   overflow: hidden;
   z-index: 500;
-  width: 50%;
+  width: 45%;
   font-size: 1rem;
 }
 
@@ -354,7 +351,7 @@
 
 .project_content_tags li {
   padding: 0;
-  margin-left: 0.3em;
+  margin-right: 0.3em;
 }
 
 .project_dark {
@@ -363,9 +360,9 @@
 
 .project_illustration {
   position: relative;
-  margin: 0 5% 0 auto;
+  margin: 0 4% 0 auto;
   overflow: visible;
-  height: 80%;
+  height: 70%;
   width: 56%;
   z-index: 490;
   background: transparent;
