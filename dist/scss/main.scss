@@ -58,9 +58,9 @@ a {
   justify-content: space-between;
   align-items: center;
   background: transparent;
-  overflow: hidden;
+  overflow: visible;
   position: fixed;
-  z-index: 1;
+  z-index: 4;
   @include tablette {
     height: var(--nav_height_tablet);
     flex-direction: column;
@@ -112,7 +112,7 @@ a {
   letter-spacing: 0.938px;
   line-height: 23px;
   font-weight: 600;
-  color: $my-light-blue;
+  color: $text_project_light;
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
@@ -147,42 +147,85 @@ a {
   transform: scale(1, 1);
 }
 
+.my_nav_burger {
+  overflow: visible;
+  margin-right: 3%;
+}
+
 .menu-btn {
-  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 55px;
   cursor: pointer;
   transition: all .5s ease-in-out;
-  border: 3px solid white;
+  // border: 1px solid white;
+  overflow: visible;
 }
 
-.menu-btn_burger {
-  width: 50px;
-  height: 6px;
+.menu-btn_burger1,
+.menu-btn_burger2,
+.menu-btn_burger3 {
+  width: 45px;
+  height: 5px;
   background: white;
   border-radius: 5px;
-  // box-shadow: 0 2px 5px rgba(255,101,47,.2);
   transition: all .5s ease-in-out;
 }
 
-.menu-btn_burger::after,
-.menu-btn_burger::before {
-  content: '';
+.open_burger2 {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.open_burger1 {
+  transform: rotate(45deg) translate(12px, 12px);
+}
+
+.open_burger3 {
+  transform: rotate(-45deg) translate(9px, -9px);
+}
+
+.my-nav-mob-wrapper {
+  height: 100vh;
+  width: 100vw;
   position: absolute;
-  width: 50px;
-  height: 6px;
-  background: white;
-  border-radius: 5px;
+  top: 0;
+  left: -100vw;
+  z-index: 3;
+  background-color: $dark-blue;
+  opacity: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
   transition: all .5s ease-in-out;
 }
 
-.menu-btn_burger::before {
-  transform: translateY(-16px);
+.nav-mob-list__item {
+  padding: 1rem;
 }
 
-.menu-btn_burger::after {
-  transform: translateY(16px);
+.nav-mob-list__link {
+  font-size: 1.5em;
+  font-family: $font_big;
+  letter-spacing: 0.938px;
+  line-height: 23px;
+  font-weight: 900;
+  color: $text_project_light;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.nav-mob-list__link:hover {
+  color: $tangerine;
+  transition: all .3s ease-in-out;
+}
+
+.open-mob_nav {
+  transform: translateX(100vw);
+  transition: all .5s ease-in-out;
 }

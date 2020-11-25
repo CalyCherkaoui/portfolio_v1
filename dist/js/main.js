@@ -83,4 +83,25 @@ var addActiveClass = function(id) {
 
 // burgermenu
 
+const menuBtn = document.querySelector('.menu-btn');
+const menuBtnBurger1 = document.querySelector('.menu-btn_burger1');
+const menuBtnBurger2 = document.querySelector('.menu-btn_burger2');
+const menuBtnBurger3 = document.querySelector('.menu-btn_burger3');
+const mobNavigation = document.querySelector('.my-nav-mob-wrapper');
+let menuOpen = false;
 
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtnBurger1.classList.add('open_burger1');
+    menuBtnBurger2.classList.add('open_burger2');
+    menuBtnBurger3.classList.add('open_burger3');
+    mobNavigation.classList.add('open-mob_nav');
+    menuOpen = true;
+  } else {
+    menuBtnBurger1.classList.remove('open_burger1');
+    menuBtnBurger2.classList.remove('open_burger2');
+    menuBtnBurger3.classList.remove('open_burger3');
+    mobNavigation.classList.remove('open-mob_nav');
+    menuOpen = false;
+  }
+});

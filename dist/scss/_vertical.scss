@@ -44,15 +44,12 @@
     font-weight: 600;
     font-family: $font_big;
     text-transform: uppercase;
-    transition: ease-in-out 250ms;
   }
 
   &:hover {
     background: none !important;
-    animation: fading 1s ease-in 0.5s;
     span {
       display: inline;
-      animation: fading 1s ease-out 0s;
     }
   }
 }
