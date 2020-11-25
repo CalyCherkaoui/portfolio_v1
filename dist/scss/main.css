@@ -220,7 +220,7 @@
 }
 
 #stack {
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
   background-color: #f1faee;
   display: -webkit-box;
@@ -290,6 +290,22 @@
   grid-auto-flow: dense;
 }
 
+@media screen and (max-width: 768px) {
+  .stack_list {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    grid-gap: 0.5vmin;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .stack_list {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    grid-gap: 0.5vmin;
+  }
+}
+
 .stack_item {
   text-align: center;
   height: 9rem;
@@ -301,6 +317,26 @@
   margin: auto;
   -webkit-box-shadow: 0 3px 7px 0 rgba(10, 22, 78, 0.15);
   box-shadow: 0 3px 7px 0 rgba(10, 22, 78, 0.15);
+}
+
+@media screen and (max-width: 768px) {
+  .stack_item {
+    height: 6rem;
+  }
+  .stack_item svg {
+    width: 5rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .stack_item {
+    height: 6rem;
+  }
+  .stack_item svg {
+    width: 5rem;
+    padding: 1rem;
+  }
 }
 
 #projects {
