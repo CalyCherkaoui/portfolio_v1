@@ -49,7 +49,7 @@
 }
 
 .project_content_title {
-  font-size: 3.5em;
+  font-size: 3em;
   max-width: 70%;
   // font-family: $font_accent;
   font-family: $font_big;
@@ -95,20 +95,20 @@
 
 .project_illustration {
   position: relative;
-  margin: 0 4% 0 auto;
+  margin: 10% 4% 0 auto;
   overflow: visible;
   // padding-top: 56.25%;
   height: 70%;
   width: 56%;
   z-index: 490;
-  // background-color: pink;
+  background-color: pink;
   background: transparent;
 
   img {
     position: absolute;
     z-index: 495;
     margin: auto;
-    width: auto;
+    width: 95%;
     max-height: 90%;
     overflow: hidden;
     box-shadow: 28px 20px 31px -13px rgba(0, 0, 0, 0.6);
@@ -172,7 +172,7 @@
   position: absolute;
   bottom: 6%;
   right: 1%;
-  font-size: 7em;
+  font-size: 4em;
   font-family: $font_accent;
   z-index: 500;
   color: $tangerine;

@@ -49,8 +49,10 @@
 
   &:hover {
     background: none !important;
+    animation: fading 1s ease-in 0.5s;
     span {
       display: inline;
+      animation: fading 1s ease-out 0s;
     }
   }
 }
