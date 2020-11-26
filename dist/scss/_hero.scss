@@ -57,6 +57,8 @@
   text-transform: uppercase;
   font-weight: 1000;
   font-family: $font_big;
+  border-left: 5px solid $tangerine;
+  padding-left: 0.5rem;
   @include mobile {
     font-size: 1.5rem;
     font-weight: 800;
@@ -74,6 +76,7 @@
   font-family: $font_big;
   font-weight: 400;
   margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
   line-height: 1.5;
   padding-right: 20%;
 
@@ -81,6 +84,7 @@
     font-size: 0.9rem;
     font-weight: 500;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     line-height: 1.5;
     padding-right: 0;
   }
@@ -89,15 +93,16 @@
     font-size: 0.9rem;
     font-weight: 500;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     line-height: 1.5;
     padding-right: 0;
   }
 }
 
 .home_bio_icones {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: $my-light-blue;
-  text-align: center;
+  text-align: right;
   a {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
