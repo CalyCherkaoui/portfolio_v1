@@ -587,12 +587,11 @@
 
 .project_illustration {
   position: relative;
-  margin: 10% 4% 0 auto;
+  margin: 3% 4% 0 auto;
   overflow: visible;
   height: 70%;
   width: 56%;
   z-index: 490;
-  background-color: pink;
   background: transparent;
 }
 
