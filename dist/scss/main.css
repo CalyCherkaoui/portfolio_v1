@@ -723,13 +723,151 @@
 #articles {
   height: 100vh;
   width: 100%;
-  background-color: aqua;
+  padding: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #contact {
   height: 100vh;
   width: 100%;
   background-color: #ff00f2;
+}
+
+.article_card_wrapper {
+  margin: 0 0 1rem 1rem;
+  width: 350px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.article_card_image {
+  width: 100%;
+  height: 200px;
+  background-color: brown;
+  overflow: hidden;
+}
+
+.article_card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  -o-object-fit: cover;
+  -o-object-position: center;
+  overflow: hidden;
+}
+
+.article_card_title {
+  padding: 1rem;
+}
+
+.article_card_title h1 {
+  font-size: 1.3rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 800;
+  color: #1d3557;
+}
+
+.article_card_description {
+  padding: 0 1rem 0 1rem;
+}
+
+.article_card_description p {
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+  color: #272727;
+}
+
+.article_card_tags {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.article_card_tags span {
+  color: #da4221;
+  font-size: 0.8rem;
+  margin-right: 0.3rem;
+}
+
+.article_card_links {
+  padding: 0.3rem 1rem 0.5rem 1rem;
+  margin-top: 1rem;
+  border-top: 0.5px solid #a8dadc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.article_card_links span {
+  font-size: 0.8rem;
+  color: #457b9d;
+}
+
+.card_links_list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card_links_item {
+  padding-left: 0.5rem;
+}
+
+.card_links_item a {
+  font-size: 1.3rem;
+  color: #0f4c81;
+}
+
+.card_links_item a:hover {
+  color: #da4221;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 *,
