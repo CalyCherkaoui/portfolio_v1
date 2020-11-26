@@ -32,12 +32,12 @@
   z-index: -10;
 }
 
-
 .home_content {
   width: 70%;
   padding: 5%;
   display: flex;
   flex-direction: column;
+  background-color: rgba($color: #e8eef1, $alpha: 0.05);
   hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -51,8 +51,8 @@
 
 .home_title_wrapper {
   // color: $tangerine;
-  // color: $classic-blue;
-  color: $text_project_light;
+  color: $my-light-blue;
+  // color: $text_project_light;
   font-size: 3em;
   text-transform: uppercase;
   font-weight: 1000;
@@ -69,10 +69,10 @@
 }
 
 .home_bio_wrapper {
-  color: white;
+  color: $text_project_light;
   font-size: 1.3rem;
-  font-family: $font_text;
-  font-weight: 600;
+  font-family: $font_big;
+  font-weight: 400;
   margin-top: 1.2rem;
   line-height: 1.5;
   padding-right: 20%;
