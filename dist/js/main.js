@@ -66,7 +66,6 @@ var removeAllActiveClasses = function() {
 
 var addActiveClass = function(id) {
   let selector = `.vertical_nav_list a[href="#${id}"]`;
-  console.log(selector);
   document.querySelector(selector).classList.add("vertical_nav_active");
 };
 
