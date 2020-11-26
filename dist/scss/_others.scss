@@ -1,17 +1,11 @@
 #articles {
-  height: 100vh;
   width: 100%;
-  // background-color: aqua;
+  height: 100vh;
+  background-color: $text_project_light;
   padding: 8%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-#contact {
-  height: 100vh;
-  width: 100%;
-  background-color: rgb(255, 0, 242);
 }
 
 .article_card_wrapper {
@@ -28,7 +22,7 @@
 .article_card_image {
   width: 100%;
   height: 200px;
-  background-color: brown;
+  // background-color: brown;
   overflow: hidden;
   img {
     width: 100%;
@@ -103,5 +97,108 @@
       color: $tangerine;
       transition: all .5s ease-in-out;
     }
+  }
+}
+
+// contactme
+
+#contact {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(255, 0, 242);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contactme {
+  width: 100%;
+  height: 85%;
+}
+
+//footer 
+
+.footer {
+  background-color: black;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color: white;
+}
+
+.footer_brand {
+  font-size: 2rem;
+}
+
+.footer_copyrights {
+  font-size: 0.9rem;
+  font-family: $font_big;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    margin-left: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .copy_r {
+    color: $my-blue;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .developer {
+    color: white;
+    &:hover {
+      color: $my-blue;
+    }
+  }
+
+  svg {
+    color: $tangerine;
+    margin-left: 0.5rem;
+  }
+
+  span {
+    margin-left: 0.5rem;
+    color: white;
+  }
+}
+
+.footer_socialmedia {
+  font-family: $font_big;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  a {
+    margin-left: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+
+    i {
+      color: $tangerine;
+      font-size: 1.5rem;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  span {
+    margin-left: 0.5rem;
+    color: white;
+    font-size: 0.9rem;
   }
 }
