@@ -14,16 +14,6 @@ gsap.utils.toArray(".panel").forEach((panel, i) => {
 //   snap: 1 / 6
 // });
 
-// parallax
-
-// window.addEventListener('scroll', function () {
-//   const parallax = document.querySelector('.parallax');
-//   let scrollPosition = window.pageYOffset;
-
-//   parallax.style.transform = 'translateY(' + scrollPosition * .5 + 'px)';
-
-// })
-
 // navigation
 
 const navHorizontal = document.querySelector(".navigation_horizontal");
@@ -75,7 +65,6 @@ var removeAllActiveClasses = function() {
 };
 
 var addActiveClass = function(id) {
-  console.log(id);
   let selector = `.vertical_nav_list a[href="#${id}"]`;
   console.log(selector);
   document.querySelector(selector).classList.add("vertical_nav_active");
