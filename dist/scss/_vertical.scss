@@ -21,7 +21,7 @@
   border-radius: 10px;
   overflow: visible;
   position: relative;
-  background-color: $text_project_dark;
+  background-color: $my-blue;
   height: 5px;
   width: 13%;
 
@@ -30,7 +30,7 @@
     position: absolute;
     top: -0.5rem;
     left: 0;
-    color:  $text_project_dark;
+    color: $my-blue;
     font-size: 0.8rem;
     font-weight: 600;
     font-family: $font_big;
