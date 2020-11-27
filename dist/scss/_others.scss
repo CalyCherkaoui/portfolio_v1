@@ -226,14 +226,38 @@
   padding-top: 1rem;
   margin-top: 1rem;
   border-top: 0.5px solid $text_project_medium;
-
   p {
     color: white;
     font-family: $font_big;
   }
 }
 
-.perso_followme_icons {
+.contactme_adress {
+  // background-color: rosybrown;
+  padding: 1rem;
+  // width: 50%;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.professional_follome {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+  p {
+    color: white;
+    font-family: $font_big;
+    margin-bottom: 1rem;
+  }
+}
+
+.perso_followme_icons,
+.professional_socialmedia {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -245,12 +269,32 @@
   }
 }
 
-.contactme_adress {
-  background-color: yellow;
-  padding: 2rem;
-  // width: 50%;
+.conatctinfo_text {
+  color: white;
+  font-family: $font_big;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
+.conatctinfo_adress {
+  font-family: $font_big;
+  color: white;
+
+  img {
+    width: 1.5rem;
+  }
+  
+  span {
+    padding-left: 0.4rem;
+  }
+
+  a {
+    &:hover {
+      color: $tangerine;
+    }
+  }
+}
 //footer 
 
 .footer {
