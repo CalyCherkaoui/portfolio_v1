@@ -116,6 +116,139 @@
   width: 100%;
   height: 65%;
   background-color: $my-black;
+  display: flex;
+  // flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.contactme_plus {
+  // background-color: rosybrown;
+  padding: 1rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactme_sumary {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  // background-color: whitesmoke;
+}
+
+.name {
+  color: $tangerine;
+  font-size: 1.5rem;
+  font-family: $font_big;
+  font-weight: 700;
+}
+
+.resume {
+  background-color: rgba($color: #e8eef1, $alpha: 0.05);
+  word-wrap: break-word;
+  padding: 2rem;
+  // background-color: plum;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 3px dashed $text_project_medium;
+  p {
+    padding: 0.5rem;
+    word-wrap: normal;
+    width: 200px;
+    font-family: $font_big;
+    color: white;
+  }
+}
+
+.metiers {
+  padding: 0.7rem;
+  margin-right: 2rem;
+  border-left: 5px solid $tangerine;
+
+}
+
+.metiers_list {
+  padding: 0.5rem 0 0.5rem 0;
+  p {
+    color: white;
+    font-family: $font_big;
+  }
+}
+
+.availability {
+  width: 20rem;
+  padding: 0.7rem 1rem 1rem 1rem;
+  color: white;
+  font-family: $font_big;
+  background-color: rgba($color: #e8eef1, $alpha: 0.05);
+}
+
+.credentials {
+  color: white;
+  font-family: $font_big;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    cursor: pointer;
+    padding: 5px;
+    width: 90px;
+    height: 90px;
+  }
+
+  img {
+    width: 80px;
+    object-fit: cover;
+  }
+}
+
+
+.perso_followme {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  // background-color: whitesmoke;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 0.5px solid $text_project_medium;
+
+  p {
+    color: white;
+    font-family: $font_big;
+  }
+}
+
+.perso_followme_icons {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    padding-right: 0.4rem;
+    img {
+      width: 2rem;
+    }
+  }
+}
+
+.contactme_adress {
+  background-color: yellow;
+  padding: 2rem;
+  // width: 50%;
 }
 
 //footer 
