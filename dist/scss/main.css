@@ -796,9 +796,45 @@
 
 #articles {
   width: 100%;
-  height: 100vh;
-  background-color: #f1faee;
+  min-height: 100vh;
+  background-color: #1d3557;
   padding: 8%;
+}
+
+.articles_header {
+  margin-bottom: 5%;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.articles_header h1 {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2.5rem;
+  color: #f1faee;
+  padding: 1rem;
+}
+
+.article_separation {
+  margin-top: 1rem;
+  width: 10%;
+  border-bottom: 6px solid #2ab2c0;
+  border-radius: 5px;
+}
+
+.articles_collection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -812,6 +848,7 @@
 
 .article_card_wrapper {
   margin: 0 0 1rem 1rem;
+  background-color: #f1faee;
   width: 350px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -939,9 +976,7 @@
 }
 
 #contact {
-  height: 100vh;
   width: 100%;
-  background-color: #ff00f2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -959,7 +994,6 @@
 
 .contactme {
   width: 100%;
-  height: 65%;
   background-color: #010516;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -969,7 +1003,7 @@
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 5% 1rem 0.5rem 6%;
 }
 
 .contactme_plus {
@@ -1062,6 +1096,8 @@
 .credentials {
   color: white;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
