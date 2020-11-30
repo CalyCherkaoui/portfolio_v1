@@ -1070,6 +1070,10 @@
   color: white;
 }
 
+.resume img {
+  width: 60px;
+}
+
 .metiers {
   padding: 0.7rem;
   margin-right: 2rem;
