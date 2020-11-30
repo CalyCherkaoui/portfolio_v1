@@ -147,6 +147,18 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 5% 1rem 0.5rem 6%;
+
+  @include mobile {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  @include tablette {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
 }
 
 .contactme_plus {
@@ -157,14 +169,36 @@
   justify-content: space-between;
   display: flex;
   flex-direction: column;
+  @include mobile {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  @include tablette {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
 }
 
 .contactme_sumary {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
   // background-color: whitesmoke;
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablette {
+    flex-direction: column;
+  }
 }
 
 .name {
@@ -196,13 +230,33 @@
   img {
     width: 60px;
   }
+
+  @include mobile {
+    p {
+      text-align: center;
+    }
+  }
+
+  @include tablette {
+    p {
+      text-align: center;
+    }
+  }
 }
 
 .metiers {
   padding: 0.7rem;
   margin-right: 2rem;
   border-left: 5px solid $tangerine;
+  @include mobile {
+    border: none;
+    margin-right: 0;
+  }
 
+  @include tablette {
+    border: none;
+    margin-right: 0;
+  }
 }
 
 .metiers_list {
@@ -219,6 +273,16 @@
   color: white;
   font-family: $font_big;
   background-color: rgba($color: #e8eef1, $alpha: 0.05);
+  
+  @include mobile {
+    width: auto;
+    padding: 0.7rem;
+  }
+
+  @include tablette {
+    width: auto;
+    padding: 0.7rem;
+  }
 }
 
 .credentials {
@@ -339,10 +403,31 @@
   justify-content: space-between;
   padding: 1rem;
   color: white;
+
+  @include mobile {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include tablette {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .footer_brand {
   font-size: 2rem;
+  @include mobile {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  @include tablette {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .footer_copyrights {
@@ -382,6 +467,14 @@
   span {
     margin-left: 0.5rem;
     color: white;
+  }
+
+  @include mobile {
+    flex-wrap: wrap;
+  }
+
+  @include tablette {
+    flex-wrap: wrap;
   }
 }
 
