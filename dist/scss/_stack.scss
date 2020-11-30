@@ -1,5 +1,5 @@
 #stack {
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
   background-color: $text_project_light;
   display: flex;
@@ -14,8 +14,8 @@
 
 .stack_header {
   // background-color: yellow;
-  padding: 2.5rem 1rem 1rem 1rem;
-  margin-top: 2rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,6 +47,16 @@
   grid-template-columns: auto auto auto auto auto;
   grid-gap: 2vmin;
   grid-auto-flow: dense;
+
+  @include mobile {
+    grid-template-columns: auto auto auto;
+    grid-gap: 0.5vmin;
+  }
+
+  @include tablette{
+    grid-template-columns: auto auto auto;
+    grid-gap: 0.5vmin;
+  }
 }
 
 .stack_item {
@@ -59,5 +69,21 @@
     -webkit-box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
        -moz-box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
             box-shadow: 0 3px 7px 0 rgba(10,22,78,0.15);
+  }
+
+  @include mobile {
+    height: 6rem;
+    svg {
+      width: 5rem;
+      padding: 1rem;
+    }
+  }
+
+  @include tablette{
+    height: 6rem;
+    svg {
+      width: 5rem;
+      padding: 1rem;
+    }
   }
 }

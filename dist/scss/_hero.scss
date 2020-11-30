@@ -1,6 +1,16 @@
+#whoami {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
 .hero {
   width: 100%;
   height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,13 +32,12 @@
   z-index: -10;
 }
 
-
 .home_content {
-  // background-color: transparentize($color: #bfdde9, $amount: 0.8);
   width: 70%;
   padding: 5%;
   display: flex;
   flex-direction: column;
+  background-color: rgba($color: #e8eef1, $alpha: 0.05);
   hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -42,42 +51,64 @@
 
 .home_title_wrapper {
   // color: $tangerine;
-  // color: $classic-blue;
-  color: $text_project_light;
+  color: $my-light-blue;
+  // color: $text_project_light;
   font-size: 3em;
   text-transform: uppercase;
   font-weight: 1000;
   font-family: $font_big;
+  border-left: 5px solid $tangerine;
+  padding-left: 0.5rem;
   @include mobile {
     font-size: 1.5rem;
     font-weight: 800;
   }
 
   @include tablette{
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: 800;
   }
 }
 
 .home_bio_wrapper {
-  color: $my-blue;
+  color: $text_project_light;
   font-size: 1.3rem;
-  font-family: $font_text;
-  font-weight: 600;
+  font-family: $font_big;
+  font-weight: 400;
   margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
   line-height: 1.5;
   padding-right: 20%;
+
+  @include mobile {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    padding-right: 0;
+  }
+
+  @include tablette{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    padding-right: 0;
+  }
 }
 
 .home_bio_icones {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: $my-light-blue;
-  text-align: center;
+  text-align: right;
   a {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     &:hover {
       color: $tangerine;
+      transition: all .5s ease-in-out;
     }
   }
 }
