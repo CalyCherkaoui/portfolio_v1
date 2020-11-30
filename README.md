@@ -41,7 +41,7 @@ The portfolio page is responsive in 3 different screen sizes:
 
 ## Live Demo:
 
-[Click here to see a live version of the project hosted on GitHack](https://rawcdn.githack.com/CalyCherkaoui/CapstoneProject-FestivallyYours/6bc2e20817ed38cdb7bdd109092d1bc0d68ee30b/dist/index.html)
+[Click here to see a live version of the project hosted by netlify](https://houda-cherkoui.netlify.app/)
 
 ## Author:
 
